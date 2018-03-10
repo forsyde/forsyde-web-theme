@@ -2,6 +2,7 @@
 title: Acknowledgements
 layout: default
 toc: false
+permalink: acknowledgements.html
 ---
 
 # Acknowledgements
