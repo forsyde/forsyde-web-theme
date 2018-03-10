@@ -24,4 +24,5 @@ exclude: [docs, Gemfile.lock, Gemfile]
 ## uncomment the line below when on a project page
 plugins:
 - jekyll-seo-tag
+- jekyll-sitemap
 #- jekyll-remote-theme
