@@ -11,13 +11,22 @@
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="/assets/css/academicons.min.css" rel="stylesheet"/>
     <link href="/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/doxygen.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico?">
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>    
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="/assets/js/docs.min.js"></script>
-    <script src="/assets/js/navbar.js"></script>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="search/searchdata.js"></script>
+    <script type="text/javascript" src="search/search.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() { init_search(); });
+    </script>
+
+    
     {% seo %}
     
     {% if jekyll.environment == 'production' %}
@@ -37,37 +46,24 @@
     <!-- Title -->
     <!-- =========================================== -->
     <div id="header_wrap" class="outer">
-      <div class="title-md-9">
-      {% include title.html %}
+      <div class="title-md-12">
+	{% include title.html %}
       </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer container">
-      <div class="col-md-9" role="main">
+      <div class="col-md-12" role="main">
 	<section id="main_content" class="inner">
           {{ content }}
 	</section>
-      </div>
-      <!-- Page navigation -- taken from http://mistic100.github.io/jekyll-bootstrap-doc/
-	   =========================================== -->
-      <div class="col-md-3" role="complementary">
-        <div class="bs-docs-sidebar hidden-print">
-	  {% if page.toc != false %}
-          <ul class="nav bs-docs-sidenav">
-          </ul>
-          <a class="back-to-top" href="#header_wrap">
-            <i class="glyphicon glyphicon-chevron-up"></i> Back to top
-          </a>
-	  {% endif %}
-        </div>
       </div>
       <div id="push"></div>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer hidden-print">
-      <div class="title-md-9">
+      <div class="title-md-12">
       {% include footer.html %}
       </div>
     </div>    

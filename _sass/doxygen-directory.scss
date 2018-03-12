@@ -1,0 +1,149 @@
+/* these are for tree view inside a (index) page */
+
+div.directory {
+        margin: 10px 0px;
+        border-top: 1px solid #9CAFD4;
+        border-bottom: 1px solid #9CAFD4;
+        width: 100%;
+}
+
+.directory table {
+        border-collapse:collapse;
+}
+
+.directory td {
+        margin: 0px;
+        padding: 0px;
+	vertical-align: top;
+}
+
+.directory td.entry {
+        white-space: nowrap;
+        padding-right: 6px;
+	padding-top: 3px;
+}
+
+.directory td.entry a {
+        outline:none;
+}
+
+.directory td.entry a img {
+        border: none;
+}
+
+.directory td.desc {
+        width: 100%;
+        padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 3px;
+	border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+.directory tr.even {
+	padding-left: 6px;
+	background-color: #F7F8FB;
+}
+
+.directory img {
+	vertical-align: -30%;
+}
+
+.directory .levels {
+        white-space: nowrap;
+        width: 100%;
+        text-align: right;
+        font-size: 9pt;
+}
+
+.directory .levels span {
+        cursor: pointer;
+        padding-left: 2px;
+        padding-right: 2px;
+	color: #3D578C;
+}
+
+.arrow {
+    color: #9CAFD4;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 80%;
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+}
+
+.icon {
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    height: 14px;
+    width: 16px;
+    display: inline-block;
+    background-color: #728DC1;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.icona {
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+}
+
+.iconfopen {
+    width: 24px;
+    height: 18px;
+    margin-bottom: 4px;
+    background-image:url('folderopen.png');
+    background-position: 0px -4px;
+    background-repeat: repeat-y;
+    vertical-align:top;
+    display: inline-block;
+}
+
+.iconfclosed {
+    width: 24px;
+    height: 18px;
+    margin-bottom: 4px;
+    background-image:url('folderclosed.png');
+    background-position: 0px -4px;
+    background-repeat: repeat-y;
+    vertical-align:top;
+    display: inline-block;
+}
+
+.icondoc {
+    width: 24px;
+    height: 18px;
+    margin-bottom: 4px;
+    background-image:url('doc.png');
+    background-position: 0px -4px;
+    background-repeat: repeat-y;
+    vertical-align:top;
+    display: inline-block;
+}
+
+table.directory {
+    font: 400 14px Roboto,sans-serif;
+}
+
+
+
+table.classindex
+{
+        margin: 10px;
+        white-space: nowrap;
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 64%;
+        border: 0;
+        border-spacing: 0; 
+        padding: 0;
+}
