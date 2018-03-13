@@ -47,7 +47,8 @@
     <!-- =========================================== -->
     <div id="header_wrap" class="outer">
       <div class="title-md-12">
-	{% include title.html %}
+	{% capture site_url %}{{site.url}}{% endcapture %}
+	{% include title.html url=site_url %}
       </div>
     </div>
 
