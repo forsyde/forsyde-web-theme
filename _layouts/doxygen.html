@@ -9,19 +9,18 @@
     
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href="/assets/css/academicons.min.css" rel="stylesheet"/>
-    <link href="/assets/css/docs.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/doxygen.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="/assets/css/academicons.min.css" rel="stylesheet" type="text/css" media="screen" >
+    <link href="{{ '/assets/css/docs.min.css' | prepend:site.github.baseurl }}" rel="stylesheet" type="text/css" media="screen" >   
+    <link href="{{ '/assets/css/doxygen.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" type="text/css" media="screen" >
     <link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico?">
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>    
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="dynsections.js"></script>
-    <script type="text/javascript" src="search/searchdata.js"></script>
-    <script type="text/javascript" src="search/search.js"></script>
+  
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="dynsections.js" type="text/javascript"></script>
+    <script src="search/searchdata.js" type="text/javascript"></script>
+    <script src="search/search.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function() { init_search(); });
     </script>

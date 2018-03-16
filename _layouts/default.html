@@ -8,16 +8,16 @@
     <meta name="description" content="{{ site.name | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
     
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href="/assets/css/academicons.min.css" rel="stylesheet"/>
-    <link href="/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" type="text/css" media="screen" >
+    <link href="/assets/css/academicons.min.css" rel="stylesheet" type="text/css" media="screen" >
+    <link href="{{ '/assets/css/docs.min.css' | prepend:site.github.baseurl }}" rel="stylesheet" type="text/css" media="screen" >
+    <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" type="text/css" media="screen" >
     <link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico?">
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>    
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="/assets/js/docs.min.js"></script>
-    <script src="/assets/js/navbar.js"></script>
+    <script src="{{ '/assets/js/docs.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ '/assets/js/navbar.js?v=' | append: site.github.build_revision | relative_url }}"></script>
     {% seo %}
     
     {% if jekyll.environment == 'production' %}
