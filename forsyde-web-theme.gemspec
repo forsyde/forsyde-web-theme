@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "forsyde-web-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.2"
   spec.authors       = ["ugeorge"]
   spec.email         = ["ugeorge@kth.se"]
 
