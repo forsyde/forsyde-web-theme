@@ -3,7 +3,7 @@ var jekyllBootstrapDoc = {
 	var html = '';
 	// console.log("HALLO!!");
 	    
-	$('#main_content').each(function() {
+	$('#interface').each(function() {
 	    var h123 = $(this).find('h1[id], h2[id], h3[id]:not([data-no-menu])');
 
 	    var sections = [];

@@ -1,10 +1,10 @@
 <header class="inner">
 
-  <h1 id="project_title"><a href="{{ include.url }}">{{ site.name | default: site.github.repository_name }}</a></h1>
+  <h1 id="project_title"><a href="{{ site.github.baseurl }}">{{ site.name | default: site.github.repository_name }}</a></h1>
   <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
   {% if site.github-releases %}
-  <section id="downloads">
+  <section id="downloads hidden-print">
 
     <a class="zip_download_link" href="{{ site.github-releases.zip_url }}">Download this project as a .zip file</a>
     <a class="tar_download_link" href="{{ site.github-releases.tar_url }}">Download this project as a tar.gz file</a>

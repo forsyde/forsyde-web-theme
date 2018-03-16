@@ -32,16 +32,14 @@
     <!-- Main navigation -->
     <!-- =========================================== -->
     <header class="navbar navbar-static-top bs-docs-nav" id="top">
-      {% capture parent_main_url %}{{site.parent-url}}{% endcapture %}
-      {% include navbar.html url=parent_main_url %}
+      {% include navbar.html %}
     </header>
 
     <!-- Title -->
     <!-- =========================================== -->
     <div id="header_wrap" class="outer">
       <div class="title-md-9">
-      {% capture site_url %}{{site.url}}{% endcapture %}
-      {% include title.html url=site_url %}
+      {% include title.html %}
       </div>
     </div>
 
