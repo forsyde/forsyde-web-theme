@@ -1,0 +1,19 @@
+<!-- Page navigation -- taken from http://mistic100.github.io/jekyll-bootstrap-doc/
+     =========================================== -->
+<div class="col-md-3" role="complementary">
+  <div class="bs-docs-sidebar hidden-print">
+    {% if page.toc != false %}
+    <h6>Page Navigation</h6>
+    <ul class="nav bs-docs-sidenav">
+    </ul>
+    <h6>Shortcuts</h6>
+    <ul class="nav">{% for shortcut in site.shortcuts %}
+      <li><a href="{{ shortcut.url }}">{{ shortcut.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <a class="back-to-top" href="#header_wrap">
+      <i class="glyphicon glyphicon-chevron-up"></i> Back to top
+    </a>  
+    {% endif %}
+  </div>
+</div>

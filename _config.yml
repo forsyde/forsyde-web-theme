@@ -26,3 +26,9 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 #- jekyll-remote-theme
+
+shortcuts:
+ - name: Wikipedia
+   url: https://www.wikipedia.org/
+ - name: ForSyDe
+   url: forsyde.github.io

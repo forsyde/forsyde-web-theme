@@ -39,7 +39,7 @@
     <div id="header_wrap" class="outer">
       <div class="title-md-9">
       {% include title.html %}
-      </div>1
+      </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -49,19 +49,7 @@
           {{ content }}
 	</section>
       </div>
-      <!-- Page navigation -- taken from http://mistic100.github.io/jekyll-bootstrap-doc/
-	   =========================================== -->
-      <div class="col-md-3" role="complementary">
-        <div class="bs-docs-sidebar hidden-print">
-	  {% if page.toc != false %}
-          <ul class="nav bs-docs-sidenav">
-          </ul>
-          <a class="back-to-top" href="#header_wrap">
-            <i class="glyphicon glyphicon-chevron-up"></i> Back to top
-          </a>
-	  {% endif %}
-        </div>
-      </div>
+      {% include side-navbar.html %}
       <div id="push"></div>
     </div>
 
