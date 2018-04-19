@@ -4,13 +4,12 @@
   <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
   {% if site.github-releases %}
-  <section id="downloads hidden-print">
-
+  <section id="downloads" class="hidden-print">
     <a class="zip_download_link" href="{{ site.github-releases.zip_url }}">Download this project as a .zip file</a>
     <a class="tar_download_link" href="{{ site.github-releases.tar_url }}">Download this project as a tar.gz file</a>
   </section>
   {% endif %}
   {% if site.github.is_project_page %}
-  <a id="forkme_banner" href="{{ site.github.repository_url }}">GitHub Project</a>
+  <a id="forkme_banner" class="hidden-print" href="{{ site.github.repository_url }}">GitHub Project</a>
   {% endif %}
 </header>
