@@ -3,15 +3,15 @@ var jekyllBootstrapDoc = {
 	var html = '';
 	// console.log("HALLO!!");
 	    
-	$('#main_content').each(function() {
-	    var h123 = $(this).find('h1[id], h2[id], h3[id]:not([data-no-menu])');
+	$('#interface').each(function() {
+	    var h123 = $(this).find('a[href]:not([data-no-menu])');
 
 	    var sections = [];
 	    h123.each(function(ix, elem) {
-		if(elem.nodeName == "H1")
+		if(elem.firstChild.nodeName == "H1")
 		    sections.push([$(this),[]]);
 		else
-		    if (sections.length)
+		    if (sections.length && (elem.firstChild.nodeName == "H2" || elem.firstChild.nodeName == "H3"))
 			sections[sections.length - 1][1].push($(this));
 	    })	    
 	    // console.log("Inside!!");
@@ -19,16 +19,18 @@ var jekyllBootstrapDoc = {
 	    // console.log("split: %o", sections);
 
 	    sections.forEach(function(section) {
-	    	// console.log("section: %o", section[0][0]);
-	    	// console.log("content: %o", section[1]);
+	    	console.log("section: %o", section[0][0]);
+	    	console.log("content: %o", section[1]);
 
-		html += '<li><a href="#' + section[0][0].id + '">' + section[0].clone().children().end().text() + '</a>';
+		html += '<li><a href="' + section[0][0].getAttribute("href") + '">'
+		        + section[0].clone().children().end().text() + '</a>';
 
 		if (section[1].length){
 		    html += '<ul class="nav">';
 	    	    section[1].forEach(function(subsection) {
-	    		console.log("subsect: %o", subsection[0]);
-	    		html += '<li><a href="#' + subsection[0].id + '">' + subsection.clone().children().remove().end().text() + '</a></li>';	
+	    		console.log("subsect: %o", subsection);
+	    		html += '<li><a href="' + subsection[0].getAttribute("href")
+			        + '">' + subsection.clone().children().end().text() + '</a></li>';	
 	    	    });
 	    	    html += '</ul>';
 		}
